@@ -9,10 +9,25 @@ import (
 
 type LogLevel int
 
+// LogLevelError.
+// Error level should used in error condition happen.
 const LogLevelError LogLevel = 0
+
+// LogLevelWarn.
+// Warn level should used when something is go strange. Add a warn log for
+// tracing the possible problem
 const LogLevelWarn LogLevel = 1
+
+// LogLevelInfo
+// Info level should used only for simple flow check.
 const LogLevelInfo LogLevel = 2
+
+// LogLevelDebug
+// Debug level should used for flow in detail, or key value when debugging
 const LogLevelDebug LogLevel = 3
+
+// LogLevelTrace
+// Trace level can used in detail value or every step in action for remote debugging
 const LogLevelTrace LogLevel = 4
 
 type OutputType int
