@@ -1,3 +1,3 @@
-module github.com/bearathome/logger
+module github.com/bearathome/gologger
 
 go 1.17
